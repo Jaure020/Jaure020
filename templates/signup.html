@@ -1,0 +1,53 @@
+{% extends 'home.html' %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+    <head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>SING UP</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="http://jacobsschool.ucsd.edu"><img src="{% static 'UCSD_logo.png' %}" width="15%" style="position:absolute; margin-top: -20px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="http://proteomics.ucsd.edu/vbafna/">Dr. Bafna's Research Laboratory |</a>
+                        <a class="nav-item nav-link active" href="mailto:urajkuma@eng.ucsd.edu">Contact Us |</a>
+                        <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="jumbotron text-center">
+            <h2>Sign up</h2>
+            <form method="post" style="text-align:left; margin-left:20%;">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button style="margin-left:-10%;" class="btn btn-primary btn-lg btn-block" type="submit">Sign up</button>
+            </form>
+        </section>
+    </body>
+    <footer class="text-muted">
+        <div class="container">
+            <p>©EcSeg {% now "Y" %}   </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
+{% endblock %}

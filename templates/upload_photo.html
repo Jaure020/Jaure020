@@ -1,0 +1,14 @@
+
+{% block content %}
+<h2>Upload Photo </h2>
+    <form method ="post" enctype ="multipart/form-data">
+    {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class = "btn btn-primary">Upload photo</button>
+    </form>
+    
+     {% for photo in photos %}
+            <img src="{{ photo.photos.url }}"width="210">
+        {% endfor %}
+
+{% endblock %}

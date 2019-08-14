@@ -1,0 +1,92 @@
+/****************This part is for styling the overall structure of the site and customizing the bootstrap*/
+body{
+    color:white;
+}
+.text-muted{
+    color:white !important;
+}
+.bg-dark, body{
+    background-color: #e9ecef !important;
+}
+.navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link.active, footer.text-muted{
+    color:black !important;
+    font-weight:normal;
+}
+.jumbotron{
+    background-color:#001b3e;
+}
+.btn-primary {
+    color: #000;
+    background-color: #FFCD00;
+    border-color: #FFCD00;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #bf9900;
+    border-color: #bf9900;
+}
+h1, h2, h3, .h1, .h2, .h3{
+    font-family: "BrixSansBold",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    line-height: 0.917;
+    color: #FFCD00;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link.active:hover{
+    background-color: #FFCD00b5;
+    border-radius: 20px;
+}
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+/*Home page*/
+#homeImg, #expandedImg{
+    box-shadow: 0px 0px 20px 1px #fff;
+}
+/* ECSEG PAGE */
+#carouselExampleIndicators{
+    width: 100%;
+}
+#thumbs{
+    margin-left: 1%;
+    margin-top: 1%;
+    box-shadow: 0px 0px 8px 0px #fff;
+}
+#thumbs:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 1px #FFCD00;
+
+}
+#expandedImg:hover{
+  cursor: zoom-in;
+}
+    .img-zoom-lens {
+  position: absolute;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  /*set the size of the result div:*/
+  width: 408px;
+  height: 408px;
+}
+.custom-file-label::after {
+background-color:#FFCD00 !important;
+}
+footer{
+
+}
