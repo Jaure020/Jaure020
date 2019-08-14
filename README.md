@@ -14,7 +14,7 @@ To download project dependencies, execute the following commands from a terminal
 git clone https://github.com/Jaure020/MasterWebsiteEcSeg.git
 pip3 install -r requirements.txt
 ```
-## Run ecSeg
+## Run ecSeg Web Framework
 To generate the website, run from terminal:
 ```
 python3 cd python manage.py runserver
