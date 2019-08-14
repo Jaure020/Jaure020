@@ -19,20 +19,20 @@ from django.views.generic.base import TemplateView
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import url
-import accounts
+import core
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('accounts.urls')),
-    path('accounts/', include('django.contrib.auth.urls')),
+    path('core/', include('core.urls')),
+    path('core/', include('django.contrib.auth.urls')),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
     url(r'^admin/', admin.site.urls),
-    url(r'^output', accounts.views.output,name='script'),
-    url(r'^upload', accounts.views.upload, name='upload'),
-    path('upload/', accounts.views.upload, name='upload'),
-    # path('photos/', accounts.views.photo_list, name='photo_list'),
-    path('photos/upload/', accounts.views.upload_photo, name='upload_photo'),
-    path('display_photos/', accounts.views.display_photos, name='display_photos'),
+    url(r'^output', core.views.output, name='script'),
+    url(r'^upload', core.views.upload, name='upload'),
+    path('upload/', core.views.upload, name='upload'),
+    # path('photos/', core.views.photo_list, name='photo_list'),
+    path('photos/upload/', core.views.upload_photo, name='upload_photo'),
+    path('display_photos/', core.views.display_photos, name='display_photos'),
 
 ]
 
