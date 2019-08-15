@@ -17,5 +17,10 @@ pip3 install -r requirements.txt
 ## Run ecSeg Web Framework
 To generate the website, run from terminal:
 ```
-python3 cd python manage.py runserver
+python3 manage.py runserver
+```
+## For OperationalError: no such table: auth_user
+To load table correctly
+```
+python3 manage.py migrate --run-syncdb
 ```
