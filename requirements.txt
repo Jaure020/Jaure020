@@ -1,5 +1,5 @@
 Django==2.2.4
 html5lib==1.0.1
-python2==1.2
+python3==3.73
 requests==2.22.0
 Pillow==5.4.1
