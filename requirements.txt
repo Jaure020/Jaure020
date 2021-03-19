@@ -1,4 +1,4 @@
-Django==2.2.4
+Django==2.2.18
 html5lib==1.0.1
 python3==3.73
 requests==2.22.0
